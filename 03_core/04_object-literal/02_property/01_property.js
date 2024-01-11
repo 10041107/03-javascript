@@ -30,6 +30,7 @@ let odj ={
 };
 
 let key = "test";
+//프로퍼티 키 동적 생성
 odj[key] = "test value";
 
-console.log(odj);
+console.log(odj)

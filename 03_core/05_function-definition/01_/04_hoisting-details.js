@@ -52,8 +52,27 @@ var variable;
 
 1.
 var funtest;
+
 2.
 console.log(funtest);
+
+
+3.
+funtest = () =>{
+    console.log("1");
+}
+
+4.
+funtest();
+
+5.
+funtest = () =>{
+    console.log("2");
+}
+
+6.
+funtest();
+
 
 
 */
@@ -75,3 +94,18 @@ let funtest = () =>{
     console.log("2");
 }
 */
+
+//함수 선언문과 표현식
+
+//함수 선언식
+function a(){
+
+};
+
+//함수 할당식 중
+
+//익명 함수 표현식
+const b = function(){};
+
+//기명 함수 표현식
+const c = function d(){};

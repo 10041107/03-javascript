@@ -21,7 +21,7 @@ function outerfuntion(){
 
     function innerFunction(){
         let innerVarable = "inner";
-        console.log("inner : ", outerVarable); // 내부 함수에서 외부 함수의 변수 접근 가능
+        console.log("inner : ", outerVariable); // 내부 함수에서 외부 함수의 변수 접근 가능
         console.log("inner : ", innerVarable) // 내부 함수에서 내부 변수 접근 가능
     }
 
