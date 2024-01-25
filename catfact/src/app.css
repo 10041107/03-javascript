@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(248, 227, 248), rgb(255, 244, 223));
+    background-size: cover;
+    color: rgb(82, 75, 75);
+}
+
+.catImages {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin: auto; 
+    display: block;
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(-50px); /* Start with a downward offset */
+    transition: opacity 1s, transform 1s; /* Transition for 1 second */
+}
+
+.catImages.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.Header{
+    height: 0px;
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    height: 50px;
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
